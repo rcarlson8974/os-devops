@@ -1,0 +1,42 @@
+#!/bin/bash
+
+#
+# clear all rules
+#
+iptables -P INPUT ACCEPT
+iptables -F
+
+
+#
+# allow ssh and ping from TGT-Private network (keep this at the top!)
+#
+iptables -A INPUT -s 192.168.0.0/16 -p tcp --dport 22 -j ACCEPT
+iptables -A INPUT -s 192.168.0.0/16 -p icmp --icmp-type echo-request -j ACCEPT
+
+#
+# defaults - drop incoming and forward, allow outgoing
+#
+iptables  -P INPUT DROP
+iptables  -P FORWARD DROP
+iptables  -P OUTPUT ACCEPT
+
+#
+# accept loopback interface (127.0.0.1)
+#
+iptables  -A INPUT -i lo -j ACCEPT
+
+#
+# accept established and related connections
+#
+iptables  -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+ip6tables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+#
+# IPv6 - accept outgoing, ping, loopback
+#
+ip6tables -P INPUT DROP
+ip6tables -P FORWARD DROP
+ip6tables -P OUTPUT ACCEPT
+ip6tables -A INPUT -i lo -j ACCEPT
+ip6tables -A INPUT -p ipv6-icmp -j ACCEPT
+ip6tables -A INPUT -m state --state INVALID -j DROP

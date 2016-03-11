@@ -1,0 +1,15 @@
+---
+- name: copy collections
+  copy:
+    src: "{{ item }}.json"
+    dest: "/tmp/{{ item }}.json"
+  with_items:
+    "{{ mongo_collections }}"
+  register: copy_collections
+  tags: mongodb:load-data:copy_collections
+
+- name: import collections
+  shell: mongoimport --db "{{ mongodb_database }}" --collection "{{ item }}" --drop --file /tmp/"{{ item }}".json --jsonArray
+  with_items:
+    "{{ mongo_collections }}"
+  when: copy_collections | changed

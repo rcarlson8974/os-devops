@@ -1,0 +1,11 @@
+---
+- include: install.yml
+  tags: mongod:install
+
+- include: configure.yml
+  tags: mongod:configure
+
+# Only need to load data into the local mongo
+#- include: load-data.yml
+#  when: rs_environment == 'local'
+#  tags: mongod:load-data

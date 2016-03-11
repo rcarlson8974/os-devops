@@ -1,0 +1,6 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+{{ "%-20s %s" | format(ip_public | default(''), inventory_hostname) }}
+{{ "%-20s %s" | format(ip_servicenet | default(''), inventory_hostname) }}
+{{ "%-20s %s" | format(ip_tgt_private | default(''), inventory_hostname) }}

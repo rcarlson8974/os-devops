@@ -1,0 +1,7 @@
+---
+mongo_collections:
+  - indoor_location_events
+  - online_product_groups
+  - store_features
+  - store_product_groups
+  - adjacencies

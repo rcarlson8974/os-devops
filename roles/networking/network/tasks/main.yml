@@ -1,0 +1,24 @@
+---
+- name: set hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
+
+- name: set hostname in /etc/sysconfig/network
+  template:
+    src: network.j2
+    dest: /etc/sysconfig/network
+  tags: hostname
+  register: restart_networking
+
+# done here instead of a handler so that it restarts immediately
+- name: restart networking
+  service:
+    name: network
+    state: restarted
+  when: restart_networking | changed
+
+- name: create /etc/hosts
+  template:
+    src: etc_hosts.j2
+    dest: /etc/hosts
+  tags: etc_hosts

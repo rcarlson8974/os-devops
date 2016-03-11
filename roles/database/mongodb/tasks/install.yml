@@ -1,0 +1,36 @@
+---
+
+- name: add mongo repo
+  copy:
+    src: mongodb.repo
+    dest: /etc/yum.repos.d/mongodb.repo
+  tags: mongodb:add_mongo_repo
+
+- name: install mongo packages
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items:
+   - mongodb-org
+   - python-pip
+  register: install_mongo_packages
+  tags: mongodb:install_mongo_packages
+
+- name: install the latest pymongo package
+  pip:
+    name: pymongo
+    state: latest
+    use_mirrors: no
+  tags: mongodb:install_pymongo_package
+
+- name: proxy negiotiation failure
+  fail:
+    msg: "Are you on a network routing through Target's corporate proxy?"
+  when: install_mongo_packages | failed
+
+- name: start mongodb
+  service:
+    name: mongod
+    state: started
+    enabled: yes
+  tags: mongodb:start_mongo

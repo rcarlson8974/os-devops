@@ -1,0 +1,27 @@
+---
+- name: install fail2ban package
+  yum:
+    name: fail2ban
+    state: installed
+  tags: fail2ban:install_packages
+
+- name: install fail2ban fail2ban-systemd for centos 7.x
+  yum:
+    name: fail2ban-systemd
+    state: installed
+  tags: fail2ban:install_packages
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version|int >= 7
+
+- name: copy sshd.local
+  template:
+    src: sshd.local.j2
+    dest: /etc/fail2ban/jail.d/sshd.local
+    mode: 0600
+  tags: fail2ban:sshd.local
+  notify: restart fail2ban
+
+- name: ensure fail2ban is started and runs on startup
+  service:
+    name: fail2ban
+    state: started
+    enabled: yes

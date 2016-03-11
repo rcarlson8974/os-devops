@@ -1,0 +1,14 @@
+---
+- name: install logrotate
+  yum:
+    name: logrotate
+    state: present
+  tags: system:logrotate:install
+
+- name: create logrotate.d scripts
+  template:
+    src: logrotate.d.j2
+    dest: /etc/logrotate.d/{{ item.name }}
+  with_items: logrotate_scripts
+  when: logrotate_scripts is defined
+  tags: system:logrotate:scripts

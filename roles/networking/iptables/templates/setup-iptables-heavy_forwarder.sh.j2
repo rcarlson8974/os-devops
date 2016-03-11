@@ -1,0 +1,7 @@
+#!/bin/bash
+
+{% for intermediate_forwarder in groups['type_splunk_intermediate_forwarder'] %}
+{% if rs_region != hostvars[intermediate_forwarder]['rs_region'] %}
+iptables -A INPUT -s {{ hostvars[intermediate_forwarder]['ip_public'] }} -p tcp --dport {{ splunk_forwarder_port }} -j ACCEPT
+{% endif %}
+{% endfor %}

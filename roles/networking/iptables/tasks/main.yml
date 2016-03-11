@@ -1,0 +1,57 @@
+---
+
+#Firewalld needs some serious learning and since we are moving to AWS, its not worth learning.
+- name: disable firewalld
+  shell: "systemctl stop firewalld.service && systemctl disable firewalld.service && systemctl mask firewalld"
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version|int >= 7
+  tags: iptables:disable_firewalld
+
+- name: install iptables-services
+  yum:
+    name: iptables-services
+    state: present
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version|int >= 7
+  tags: iptables:install_iptables_services
+
+- name: enable systemctl iptables
+  shell: "systemctl enable iptables"
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version|int >= 7
+  tags: iptables:enable_iptables_service
+
+- name: copy base iptables script
+  template:
+    src: setup-iptables-base.sh.j2
+    dest: /tmp/setup-iptables-common.sh
+    owner: root
+    group: root
+    mode: 0700
+  register: common_iptables_file
+  tags: iptables:copy_base
+
+- name: copy custom iptables scripts
+  template:
+    src: setup-iptables-{{ item }}.sh.j2
+    dest: /tmp/setup-iptables-{{ item }}.sh
+    owner: root
+    group: root
+    mode: 0700
+  with_items: iptables_types
+  when: iptables_types is defined
+  register: custom_iptables_file
+  tags: iptables:copy_custom
+
+- name: run base iptables script
+  command: /tmp/setup-iptables-common.sh
+  when: force or common_iptables_file | changed or custom_iptables_file | changed
+  tags: iptables:base
+
+- name: run custom iptables scripts
+  command: /tmp/setup-iptables-{{ item }}.sh
+  with_items: iptables_types
+  when: iptables_types is defined and iptables_types|length > 0 and force or common_iptables_file | changed or custom_iptables_file | changed
+  tags: iptables:custom
+
+- name: save iptables
+  command: service iptables save
+  when: force or common_iptables_file | changed or custom_iptables_file | changed
+  tags: iptables:save

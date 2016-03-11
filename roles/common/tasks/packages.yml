@@ -1,0 +1,15 @@
+---
+- name: install package dependencies
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items: package_dependencies
+  tags: common:install_package_dependencies
+
+- name: disabling selinux
+  copy:
+    src: selinux.conf
+    dest: /etc/selinux/config
+    mode: 0644
+  register: selinux_config
+  tags: common:selinux:configure

@@ -1,0 +1,17 @@
+---
+http_port: 80
+https_port: 443
+
+mongodb_port: 27017
+mongodb_database: accounts
+
+package_dependencies:
+  - epel-release
+  - libselinux-python
+
+
+admin_password: "{{ encrypted_admin_password }}"
+admin_username: "{{ encrypted_admin_username }}"
+mongo_password: "{{ encrypted_mongo_password }}"
+mongo_username: "{{ encrypted_mongo_username }}"
+accounts_password: "{{ encrypted_accounts_password }}"

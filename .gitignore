@@ -1,0 +1,16 @@
+# Created by .ignore support plugin (hsz.mobi)
+# OS-specific
+.DS_Store
+
+# Vagrant stuff
+.vagrant
+
+# Python
+*.pyc
+
+# IDE junk
+.idea/*
+.project
+
+# Ansible examples
+example_roles

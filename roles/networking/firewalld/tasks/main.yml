@@ -1,0 +1,59 @@
+---
+- name: make sure firewalld is running
+  service:
+    name: firewalld
+    state: started
+  tags: firewalld:start
+
+- name: allow ssh and ping from TGT-Private network (keep this at the top!)
+  firewalld:
+    source: "{{ tgt_private_ip_range[rs_region] }}/24"
+    port: "22/tcp"
+    zone: internal
+    state: enabled
+    permanent: true
+    immediate: yes
+  notify: restart firewalld
+  tags: firewalld:private_network_rules
+
+- name: setup firewall rules for private network(s)
+  firewalld:
+    source: "{{ tgt_private_ip_range[rs_region] }}/24"
+    port: "{{ item }}/tcp"
+    zone: internal
+    state: enabled
+    permanent: true
+    immediate: yes
+  with_items:
+    private_network_ports
+  when: private_network_ports is defined and private_network_ports|length > 0
+  notify: restart firewalld
+  tags: firewalld:private_network_rules
+
+- name: setup firewall rules for running locally
+  firewalld:
+    source: "127.0.0.1/32"
+    port: "{{ mongodb_port }}/tcp"
+    zone: internal
+    state: enabled
+    permanent: true
+    immediate: yes
+  when: rs_environment == 'local'
+  notify: restart firewalld
+  tags: firewalld:local_network_rules
+
+#TODO:  Need to setup load balancer task
+
+- name: setup firewall rules for replicator
+  firewalld:
+    source: "{{ hostvars[item]['ip_public'] }}/32"
+    port: "{{ mongodb_port }}/tcp"
+    zone: public
+    state: enabled
+    permanent: true
+    immediate: yes
+  with_items:
+    groups.type_replicator
+  when: rs_region == 'ord'
+  notify: restart firewalld
+  tags: firewalld:replicator_network_rules

@@ -1,0 +1,52 @@
+#!/bin/bash
+
+
+#
+# accept all from load balancers
+# http://www.rackspace.com/knowledge_center/article/using-cloud-load-balancers-with-rackconnect
+#
+
+{% for load_balancer_port in load_balancer_ports %}
+
+{% if rs_region == 'ord' %}
+# ORD
+LOAD_BALANCER_IPS="10.183.253.0/24
+                   10.187.191.0/24
+                   10.187.187.0/24
+                   10.187.190.0/24
+                   10.189.245.0/24
+                   10.189.247.0/24
+                   10.183.251.0/24
+                   10.187.186.0/24
+                   10.183.252.0/24
+                   10.189.246.0/24
+                   10.189.244.0/24
+                   10.183.250.0/24"
+
+{% endif %}
+
+{% if rs_region == 'iad' %}
+# IAD
+LOAD_BALANCER_IPS="10.189.252.0/24
+                   10.187.190.0/24
+                   10.187.191.0/24
+                   10.189.255.0/24
+                   10.189.254.0/24"
+{% endif %}
+
+{% if rs_region == 'dfw' %}
+# DFW
+LOAD_BALANCER_IPS="10.183.250.0/24
+                   10.189.254.0/24
+                   10.183.251.0/24
+                   10.189.255.0/24
+                   10.189.252.0/24
+                   10.183.248.0/24
+                   10.187.186.0/24"
+{% endif %}
+
+for LOAD_BALANCER_IP in ${LOAD_BALANCER_IPS}; do
+  iptables -A INPUT -s ${LOAD_BALANCER_IP} -p tcp --dport {{ load_balancer_port }} -j ACCEPT
+done
+
+{% endfor %}

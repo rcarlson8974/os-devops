@@ -1,0 +1,36 @@
+---
+- name: mongodb playbook
+  hosts: type_mongodb
+  become: true
+  become_method: sudo
+
+  roles:
+    - role: common
+      tags: common
+
+    - role: networking/network
+      tags: network
+
+    - role: networking/iptables
+      iptables_types:
+        - private_network
+      private_network_ports:
+        - "{{ mongodb_port }}"
+      tags: iptables
+
+    - role: system/logrotate
+      logrotate_scripts:
+        - name: mongodb
+          path: /var/log/mongodb/*.log
+          options:
+            - daily
+            - size 10M
+            - rotate 100
+            - missingok
+            - compress
+            - delaycompress
+            - copytruncate
+      tags: logrotate
+
+    - role: database/mongodb
+      tags: mongodb

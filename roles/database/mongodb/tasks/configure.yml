@@ -1,0 +1,71 @@
+---
+
+- name: create /etc/mongod.conf
+  template:
+    src: mongod.conf.j2
+    dest: /etc/mongod.conf
+  register: mongod_config
+  tags: mongod:configure:config
+
+- name: create administrative user siteUserAdmin
+  mongodb_user:
+    database: admin
+    name: "{{ mongo_username }}"
+    password: "{{ mongo_password }}"
+    roles: userAdminAnyDatabase
+    login_port: "{{ mongodb_port }}"
+  tags: mongod:configure:add_admin_user
+
+- name: create administrative user siteRootAdmin
+  mongodb_user:
+    database: admin
+    name: "{{ mongo_username }}"
+    password: "{{ mongo_password }}"
+    roles: root
+    login_port: "{{ mongodb_port }}"
+  tags: mongod:configure:add_admin_user
+
+- name: create admin user
+  mongodb_user:
+    database: admin
+    name: accounts
+    password: "{{ mongo_password }}"
+    login_port: "{{ mongodb_port }}"
+    state: present
+  ignore_errors: yes
+  tags:  mongod:configure:add_admin_user
+  notify: restart mongod
+
+- name: create accounts user
+  mongodb_user:
+    database: "{{ mongodb_database }}"
+    name: "{{ mongo_username }}"
+    password: "{{ mongo_password }}"
+    roles: readWrite
+    login_user: "{{ mongo_username }}"
+    login_password: "{{ mongo_password }}"
+    login_port: "{{ mongodb_port }}"
+  tags: mongod:configure:add_accounts_user
+
+- name: adjust ulimits
+  shell: "{{ item }}"
+  with_items:
+    - "ulimit -n 64000"
+    - "ulimit -u 64000"
+  notify: restart mongod
+  tags: mongod:configure:adjust_ulimits
+
+- name: set readahead for block devices
+  shell: blockdev --setra 256 /dev/xvda
+  when: rs_environment != 'local'
+  notify: restart mongod
+  tags: mongod:configure:set_readahead
+
+- name: restart mongod
+  service:
+    name: mongod
+    state: restarted
+  notify: restart mongod
+  when: mongod_config | changed
+  tags: mongodb:restart_mongod
+

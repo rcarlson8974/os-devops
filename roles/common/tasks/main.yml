@@ -1,0 +1,37 @@
+---
+- name: install centos 6.x repo
+  yum:
+    name: http://dl.fedoraproject.org/pub/epel/6/x86_64/epel-release-6-8.noarch.rpm
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version|int == 6
+
+- name: install centos 7.x repo
+  yum:
+    name: http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
+  when: ansible_distribution == 'CentOS' and ansible_distribution_major_version|int >= 7
+
+- name: upgrade all packages
+  yum: name=* state=latest
+
+- name: install package dependencies
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items: package_dependencies
+  tags: common:install_package_dependencies
+
+- include: packages.yml
+  when: ansible_os_family == "RedHat"
+  tags: common:packages
+
+- include: fail2ban.yml
+  tags: common:fail2ban
+
+- include: ntp.yml
+  when: ansible_os_family == "RedHat"
+  tags: common:ntp
+
+- include: prompt.yml
+  tags: common:prompt
+
+- include: users.yml
+  tags: common:users

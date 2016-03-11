@@ -1,0 +1,185 @@
+[
+  {
+    "createdDate": "2014-07-16T14:00:06+0000",
+    "modifiedDate": "2015-04-28T19:05:16+0000",
+    "datedValues": [
+      {
+        "startDate": null,
+        "endDate": null,
+        "value": {
+          "geofenceRadiusMeters": 150,
+          "features": {
+            "basket": false,
+            "beacon": false,
+            "list": false,
+            "mapping": true,
+            "payment": false,
+            "storeModePilot": true,
+            "wifi": true,
+            "requestTeamMember": false
+          }
+        }
+      }
+    ],
+    "storeId": "default",
+    "version": 125,
+    "status": "$UNKNOWN",
+    "shortDisplayName": null,
+    "latitude": null,
+    "longitude": null,
+    "timeZoneOffset": null,
+    "dstRecognized": null,
+    "openDate": null,
+    "closeDate": null,
+    "closeFiscalYear": null,
+    "subTypeDescription": null,
+    "addressLines": null,
+    "city": null,
+    "country": null,
+    "county": null,
+    "formattedAddress": null,
+    "postalCode": null,
+    "stateOrProvince": null,
+    "phoneNumbers": null,
+    "operatingHours": null,
+    "alternateOperatingHours": null,
+    "capabilities": null
+  },
+  {
+    "createdDate": "2015-04-02T15:25:29+0000",
+    "modifiedDate": "2015-04-22T15:37:05+0000",
+    "datedValues": [
+      {
+        "startDate": null,
+        "endDate": null,
+        "value": {
+          "geofenceRadiusMeters": null,
+          "features": {
+            "beacon": true
+          }
+        }
+      }
+    ],
+    "storeId": "1375",
+    "version": 115,
+    "status": "ACTIVE",
+    "shortDisplayName": "Mpls Nicollet Mall",
+    "latitude": "44.975017",
+    "longitude": "-93.274104",
+    "timeZoneOffset": "-06",
+    "dstRecognized": true,
+    "openDate": "2001-10-10T00:00:00+0000",
+    "closeDate": null,
+    "closeFiscalYear": null,
+    "subTypeDescription": "PFresh",
+    "addressLines": [
+      "900 Nicollet Mall"
+    ],
+    "city": "Minneapolis",
+    "country": "United States of America",
+    "county": "Hennepin",
+    "formattedAddress": "900 Nicollet Mall  Minneapolis MN 55403-2530",
+    "postalCode": "55403-2530",
+    "stateOrProvince": "MN",
+    "phoneNumbers": [
+      {
+        "functionalTypeCode": "Main",
+        "functionalTypeDescription": "Main",
+        "phoneNumber": "612-338-0085"
+      },
+      {
+        "functionalTypeCode": "MFax",
+        "functionalTypeDescription": "Fax",
+        "phoneNumber": "612-354-5187"
+      }
+    ],
+    "operatingHours": [
+      {
+        "interval": null,
+        "shortName": "Mon.",
+        "fullName": "Monday",
+        "textMessage": null,
+        "summary": "7:00 a.m.-10:00 p.m.",
+        "beginTime": "07:00:00",
+        "thruTime": "22:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      },
+      {
+        "interval": null,
+        "shortName": "Tues.",
+        "fullName": "Tuesday",
+        "textMessage": null,
+        "summary": "7:00 a.m.-10:00 p.m.",
+        "beginTime": "07:00:00",
+        "thruTime": "22:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      },
+      {
+        "interval": null,
+        "shortName": "Wed.",
+        "fullName": "Wednesday",
+        "textMessage": null,
+        "summary": "7:00 a.m.-10:00 p.m.",
+        "beginTime": "07:00:00",
+        "thruTime": "22:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      },
+      {
+        "interval": null,
+        "shortName": "Thurs.",
+        "fullName": "Thursday",
+        "textMessage": null,
+        "summary": "7:00 a.m.-10:00 p.m.",
+        "beginTime": "07:00:00",
+        "thruTime": "22:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      },
+      {
+        "interval": null,
+        "shortName": "Fri.",
+        "fullName": "Friday",
+        "textMessage": null,
+        "summary": "7:00 a.m.-10:00 p.m.",
+        "beginTime": "07:00:00",
+        "thruTime": "22:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      },
+      {
+        "interval": null,
+        "shortName": "Sat.",
+        "fullName": "Saturday",
+        "textMessage": null,
+        "summary": "8:00 a.m.-10:00 p.m.",
+        "beginTime": "08:00:00",
+        "thruTime": "22:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      },
+      {
+        "interval": null,
+        "shortName": "Sun.",
+        "fullName": "Sunday",
+        "textMessage": null,
+        "summary": "10:00 a.m.-9:00 p.m.",
+        "beginTime": "10:00:00",
+        "thruTime": "21:00:00",
+        "periodTextMessage": null,
+        "is24Hours": false,
+        "isOpen": true
+      }
+    ],
+    "alternateOperatingHours": null,
+    "capabilities": null
+  }
+]

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+{% if groups['type_replicator'] is defined %}
+{% for replicator in groups['type_replicator'] %}
+{% if rs_region == 'ord' %}
+iptables -A INPUT -s {{ hostvars[replicator]['ip_public'] }} -p tcp --dport {{ mongodb_port }} -j ACCEPT
+{% endif %}
+{% endfor %}
+{% endif %}

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Bagger's Phone",
+    "googleNow": {
+      "refreshToken": "1/ZeU7JimgKswJvUcfQpVTgaj2pdzrHRd_5PW-4-pSB8LBactUREZofsF9C7PrpE-j"
+    },
+    "ids": [
+      {
+        "type": "wcsId",
+        "id": "3209815753"
+      }
+    ]
+  },
+  {
+    "name": "Bishwa's Phone",
+    "googleNow": {
+      "refreshToken": "1/GfIHRwirrk_t_nhl2nuXbnZFXXsnvrd9A8JLyEyG3U_BactUREZofsF9C7PrpE-j"
+    },
+    "ids": [
+      {
+        "type": "wcsId",
+        "id": "3209815754"
+      }
+    ]
+  }
+]

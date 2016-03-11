@@ -1,0 +1,29 @@
+---
+- name: create developers group
+  group:
+    name: developers
+  tags: common:create_developers_group
+
+- name: add developers group to sudoers
+  lineinfile:
+    dest: /etc/sudoers
+    regexp: '^%developers ALL\='
+    line: '%developers ALL=(ALL) NOPASSWD:ALL'
+    validate: 'visudo -cf %s'
+  tags: common:add_developers_tosudo
+
+- name: create users
+  user:
+    name: "{{ item.lan_id|lower }}"
+    comment: "{{ item.name }}"
+    group: "{{ item.group }}"
+  with_items: users
+  tags: common:create_users
+
+- name: create ssh keys
+  authorized_key:
+    user: "{{ item.lan_id|lower }}"
+    key: "{{ item.ssh_key }}"
+    exclusive: true
+  with_items: users
+  tags: common:create_ssh

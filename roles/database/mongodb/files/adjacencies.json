@@ -1,0 +1,1368 @@
+[
+  {
+    "categoryIds": [
+      623504
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 25,
+        "name": "LEGWEAR",
+        "hanging": true
+      }
+    ],
+    "id": 26,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Hosiery",
+    "recommendedCall": {
+      "id": "259",
+      "name": "Intimates"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 40,
+        "name": "MENS ESSENTIALS",
+        "hanging": true
+      },
+      {
+        "id": 48,
+        "name": "BOYS BASICS/FURNISHINGS",
+        "hanging": true
+      }
+    ],
+    "id": 53,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Mens Basics",
+    "recommendedCall": {
+      "id": "263",
+      "name": "Mens"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 22,
+        "name": "PANTIES",
+        "hanging": true
+      },
+      {
+        "id": 23,
+        "name": "BRAS",
+        "hanging": true
+      }
+    ],
+    "id": 56,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Intimate Basics",
+    "recommendedCall": {
+      "id": "259",
+      "name": "Intimates"
+    }
+  },
+  {
+    "categoryIds": [
+      5033
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 270,
+        "name": "FROZEN - MEALS AND SIDES",
+        "hanging": false
+      },
+      {
+        "id": 288,
+        "name": "FROZEN PIZZA AND DESSERTS",
+        "hanging": false
+      }
+    ],
+    "id": 17,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Frozen",
+    "recommendedCall": {
+      "id": "249",
+      "name": "Frozen Food"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 32,
+        "name": "GIRLS 4-16 SEPARATES",
+        "hanging": true
+      },
+      {
+        "id": 205,
+        "name": "GIRLS BOTTOMS",
+        "hanging": true
+      },
+      {
+        "id": 222,
+        "name": "GIRLS SWIM/OUTERWEAR",
+        "hanging": true
+      }
+    ],
+    "id": 20,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Girls",
+    "recommendedCall": {
+      "id": "250",
+      "name": "Girls"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 20,
+        "name": "SLEEPWEAR",
+        "hanging": true
+      }
+    ],
+    "id": 30,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Intimate Sleepwear",
+    "recommendedCall": {
+      "id": "259",
+      "name": "Intimates"
+    }
+  },
+  {
+    "categoryIds": [
+      3929
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 60,
+        "name": "COLLECTION BEDDING",
+        "hanging": false
+      },
+      {
+        "id": 62,
+        "name": "BASIC BEDDING",
+        "hanging": false
+      },
+      {
+        "id": 64,
+        "name": "BATH",
+        "hanging": false
+      },
+      {
+        "id": 66,
+        "name": "RUGS",
+        "hanging": false
+      },
+      {
+        "id": 67,
+        "name": "SOFT DECOR",
+        "hanging": false
+      },
+      {
+        "id": 68,
+        "name": "WINDOW",
+        "hanging": false
+      },
+      {
+        "id": 97,
+        "name": "KIDS HOME",
+        "hanging": false
+      },
+      {
+        "id": 200,
+        "name": "TABLETOP",
+        "hanging": false
+      }
+    ],
+    "id": 12,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Domestics",
+    "recommendedCall": {
+      "id": "245",
+      "name": "Domestics"
+    }
+  },
+  {
+    "categoryIds": [
+      979510
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 8,
+        "name": "TV AND HOME ELECTRONICS",
+        "hanging": false
+      },
+      {
+        "id": 56,
+        "name": "IMAGING AND OFFICE",
+        "hanging": false
+      },
+      {
+        "id": 57,
+        "name": "PORTABLE ELECTRONICS",
+        "hanging": false
+      },
+      {
+        "id": 80,
+        "name": "OFFICE ELECTRONICS",
+        "hanging": false
+      },
+      {
+        "id": 255,
+        "name": "POSTPAID WIRELESS",
+        "hanging": false
+      },
+      {
+        "id": 262,
+        "name": "ELECTRONICS SERVICES",
+        "hanging": false
+      }
+    ],
+    "id": 14,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Electronics",
+    "recommendedCall": {
+      "id": "246",
+      "name": "Electronics"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 13,
+        "name": "WOMEN'S WOVEN TOPS/ DRESSES",
+        "hanging": true
+      },
+      {
+        "id": 14,
+        "name": "WOMEN'S WOVEN BOTTOMS",
+        "hanging": true
+      },
+      {
+        "id": 15,
+        "name": "SWEATERS",
+        "hanging": true
+      },
+      {
+        "id": 16,
+        "name": "WOMEN'S KNITS",
+        "hanging": true
+      },
+      {
+        "id": 17,
+        "name": "MOSS SUPPLY CO",
+        "hanging": true
+      },
+      {
+        "id": 18,
+        "name": "MERONA",
+        "hanging": true
+      },
+      {
+        "id": 21,
+        "name": "WOMEN'S",
+        "hanging": true
+      },
+      {
+        "id": 29,
+        "name": "MATERNITY",
+        "hanging": true
+      },
+      {
+        "id": 45,
+        "name": "SPECIAL PROJECTS",
+        "hanging": false
+      },
+      {
+        "id": 238,
+        "name": "SWIMWEAR",
+        "hanging": true
+      },
+      {
+        "id": 251,
+        "name": "READY TO WEAR SPECIAL PROJECTS",
+        "hanging": true
+      },
+      {
+        "id": 259,
+        "name": "MOSS BLACK",
+        "hanging": true
+      },
+      {
+        "id": 269,
+        "name": "CONVERSE ONE STAR",
+        "hanging": true
+      },
+      {
+        "id": 278,
+        "name": "RTW COLLECTIONS",
+        "hanging": true
+      },
+      {
+        "id": 282,
+        "name": "XHILARATION",
+        "hanging": true
+      },
+      {
+        "id": 283,
+        "name": "OUTERWEAR",
+        "hanging": true
+      }
+    ],
+    "id": 44,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Ready-to-wear",
+    "recommendedCall": {
+      "id": "267",
+      "name": "Ready to Wear"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 295,
+        "name": "REUSABLE BAGS",
+        "hanging": false
+      }
+    ],
+    "id": 8,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Checklanes",
+    "recommendedCall": null
+  },
+  {
+    "categoryIds": [
+      5033
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 284,
+        "name": "DAIRY",
+        "hanging": false
+      }
+    ],
+    "id": 10,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Dairy",
+    "recommendedCall": {
+      "id": "251",
+      "name": "Grocery"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 31,
+        "name": "INFANT/TODDLER GIRL",
+        "hanging": true
+      },
+      {
+        "id": 33,
+        "name": "INFANT/TODDLER BOYS",
+        "hanging": true
+      },
+      {
+        "id": 206,
+        "name": "NEWBORN",
+        "hanging": true
+      },
+      {
+        "id": 217,
+        "name": "INFANT/TODDLER SEASONAL",
+        "hanging": true
+      }
+    ],
+    "id": 29,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Newborn/Infant/Toddler",
+    "recommendedCall": {
+      "id": "257",
+      "name": "Infants"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 211,
+        "name": "PRODUCE/FLORAL",
+        "hanging": false
+      },
+      {
+        "id": 224,
+        "name": "PRODUCE",
+        "hanging": false
+      },
+      {
+        "id": 266,
+        "name": "FRUIT",
+        "hanging": false
+      },
+      {
+        "id": 267,
+        "name": "FRUIT",
+        "hanging": false
+      }
+    ],
+    "id": 42,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "",
+    "recommendedCall": {
+      "id": "266",
+      "name": "Produce"
+    }
+  },
+  {
+    "categoryIds": [
+      4787
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 9,
+        "name": "PATIO & GRILL",
+        "hanging": true
+      },
+      {
+        "id": 51,
+        "name": "TRIM A TREE",
+        "hanging": true
+      },
+      {
+        "id": 78,
+        "name": "TARGET.COM SMITH & HAWKEN PREM",
+        "hanging": true
+      },
+      {
+        "id": 84,
+        "name": "LAWN & GARDEN",
+        "hanging": true
+      },
+      {
+        "id": 240,
+        "name": "SEASONAL",
+        "hanging": true
+      }
+    ],
+    "id": 45,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Seasonal",
+    "recommendedCall": {
+      "id": "268",
+      "name": "Seasonal"
+    }
+  },
+  {
+    "categoryIds": [
+      1521000.0000000000000000
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 53,
+        "name": "CARDS/PARTY",
+        "hanging": false
+      },
+      {
+        "id": 54,
+        "name": "CANDLES AND SCRAPBOOKING",
+        "hanging": false
+      },
+      {
+        "id": 81,
+        "name": "SCHOOL AND OFFICE SUPPLIES",
+        "hanging": false
+      }
+    ],
+    "id": 50,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Stationery",
+    "recommendedCall": {
+      "id": "273",
+      "name": "Stationery"
+    }
+  },
+  {
+    "categoryIds": [
+      510501
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 37,
+        "name": "SKIN/BATH/FRAGRANCES",
+        "hanging": false
+      },
+      {
+        "id": 52,
+        "name": "COSMETICS",
+        "hanging": false
+      },
+      {
+        "id": 63,
+        "name": "HAIR CARE",
+        "hanging": false
+      }
+    ],
+    "id": 68,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Beauty",
+    "recommendedCall": {
+      "id": "244",
+      "name": "Beauty"
+    }
+  },
+  {
+    "categoryIds": [
+      3703
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 94,
+        "name": "PHARMACY-OTC",
+        "hanging": false
+      },
+      {
+        "id": 208,
+        "name": "PHARMACY/RX",
+        "hanging": false
+      },
+      {
+        "id": 245,
+        "name": "OTC-PERSONAL CARE",
+        "hanging": false
+      },
+      {
+        "id": 265,
+        "name": "CLINIC",
+        "hanging": false
+      },
+      {
+        "id": 275,
+        "name": "FLU SHOTS",
+        "hanging": false
+      },
+      {
+        "id": 279,
+        "name": "FLU SHOT EVENT",
+        "hanging": false
+      }
+    ],
+    "id": 69,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Healthcare",
+    "recommendedCall": null
+  },
+  {
+    "categoryIds": [
+      1376500.0000000000000000
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 24,
+        "name": "HANDBAGS",
+        "hanging": true
+      },
+      {
+        "id": 26,
+        "name": "WATCHES",
+        "hanging": true
+      },
+      {
+        "id": 27,
+        "name": "FINE JEWELRY",
+        "hanging": true
+      },
+      {
+        "id": 28,
+        "name": "COSTUME JEWELRY",
+        "hanging": true
+      },
+      {
+        "id": 61,
+        "name": "ACCESSORIES",
+        "hanging": true
+      },
+      {
+        "id": 90,
+        "name": "SUNGLASSES",
+        "hanging": true
+      },
+      {
+        "id": 209,
+        "name": "ACCESSORIES SPECIAL PROJECTS",
+        "hanging": true
+      },
+      {
+        "id": 215,
+        "name": "JEWELRY",
+        "hanging": true
+      }
+    ],
+    "id": 31,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Jewelry/Accessories",
+    "recommendedCall": {
+      "id": "260",
+      "name": "Jewelry"
+    }
+  },
+  {
+    "categoryIds": [
+      5033
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 210,
+        "name": "MEAT",
+        "hanging": false
+      },
+      {
+        "id": 226,
+        "name": "MEAT",
+        "hanging": false
+      },
+      {
+        "id": 268,
+        "name": "MEAT",
+        "hanging": false
+      }
+    ],
+    "id": 35,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Meat",
+    "recommendedCall": {
+      "id": "235",
+      "name": "Meat"
+    }
+  },
+  {
+    "categoryIds": [
+      27001
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 86,
+        "name": "ACTIVITIES/DOLLS/PLUSH",
+        "hanging": false
+      },
+      {
+        "id": 87,
+        "name": "GAMES/DIECAST/ACTION FIGURES",
+        "hanging": false
+      },
+      {
+        "id": 204,
+        "name": "PRESCHOOL/SEASONAL TOYS",
+        "hanging": false
+      }
+    ],
+    "id": 52,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Toys",
+    "recommendedCall": {
+      "id": "275",
+      "name": "Toys"
+    }
+  },
+  {
+    "categoryIds": [
+      3929
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 65,
+        "name": "DECORATIVE ACCESSORIES",
+        "hanging": false
+      },
+      {
+        "id": 74,
+        "name": "LIGHTING AND WALL DECOR",
+        "hanging": false
+      },
+      {
+        "id": 249,
+        "name": "FURNITURE",
+        "hanging": false
+      }
+    ],
+    "id": 72,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Decorative Home",
+    "recommendedCall": {
+      "id": "232",
+      "name": "Furniture"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 55,
+        "name": "CANDY",
+        "hanging": false
+      },
+      {
+        "id": 71,
+        "name": "SNACKS",
+        "hanging": false
+      },
+      {
+        "id": 203,
+        "name": "NON-CARBONATED BEVERAGES",
+        "hanging": false
+      },
+      {
+        "id": 213,
+        "name": "LIQUOR",
+        "hanging": false
+      },
+      {
+        "id": 231,
+        "name": "BREAKFAST & WARM BEVERAGES",
+        "hanging": false
+      },
+      {
+        "id": 271,
+        "name": "SODA",
+        "hanging": false
+      },
+      {
+        "id": 274,
+        "name": "BULK COFFEE",
+        "hanging": false
+      },
+      {
+        "id": 285,
+        "name": "BULK CANDY",
+        "hanging": false
+      }
+    ],
+    "id": 74,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Snacks/Bev/Candy",
+    "recommendedCall": {
+      "id": "251",
+      "name": "Grocery"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 214,
+        "name": "PERFORMANCE ACTIVEWEAR",
+        "hanging": true
+      }
+    ],
+    "id": 5,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Performance",
+    "recommendedCall": {
+      "id": "267",
+      "name": "Ready to Wear"
+    }
+  },
+  {
+    "categoryIds": [
+      549501
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 12,
+        "name": "MUSIC",
+        "hanging": false
+      },
+      {
+        "id": 50,
+        "name": "DIGITAL ENTERTAINMENT",
+        "hanging": false
+      },
+      {
+        "id": 58,
+        "name": "MOVIES",
+        "hanging": false
+      },
+      {
+        "id": 59,
+        "name": "BOOKS AND MAGAZINES",
+        "hanging": false
+      },
+      {
+        "id": 201,
+        "name": "COMPUTER SOFTWARE",
+        "hanging": false
+      },
+      {
+        "id": 207,
+        "name": "VIDEO GAMES",
+        "hanging": false
+      },
+      {
+        "id": 276,
+        "name": "PREPAID CARDS",
+        "hanging": false
+      },
+      {
+        "id": 290,
+        "name": "VISA/AMEX/MC CARDS",
+        "hanging": false
+      },
+      {
+        "id": 790,
+        "name": "GIFT CARDS",
+        "hanging": false
+      }
+    ],
+    "id": 15,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Entertainment",
+    "recommendedCall": {
+      "id": "246",
+      "name": "Electronics"
+    }
+  },
+  {
+    "categoryIds": [
+      5044
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 3,
+        "name": "HOUSEHOLD COMMODITIES",
+        "hanging": false
+      }
+    ],
+    "id": 27,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Household Commodities",
+    "recommendedCall": {
+      "id": "243",
+      "name": "Household Commodities"
+    }
+  },
+  {
+    "categoryIds": [
+      3797
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 69,
+        "name": "LUGGAGE",
+        "hanging": false
+      }
+    ],
+    "id": 33,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Luggage",
+    "recommendedCall": {
+      "id": "262",
+      "name": "Luggage"
+    }
+  },
+  {
+    "categoryIds": [
+      1800520.0000000000000000
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 83,
+        "name": "PET CARE",
+        "hanging": false
+      }
+    ],
+    "id": 40,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Pets",
+    "recommendedCall": {
+      "id": "265",
+      "name": "Pets"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 234,
+        "name": "ONE SPOT",
+        "hanging": false
+      }
+    ],
+    "id": 43,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "",
+    "recommendedCall": null
+  },
+  {
+    "categoryIds": [
+      1700500.0000000000000000
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 77,
+        "name": "SEASONAL FOOTWEAR",
+        "hanging": false
+      },
+      {
+        "id": 93,
+        "name": "CHILDRENS",
+        "hanging": false
+      },
+      {
+        "id": 96,
+        "name": "WOMENS FOOTWEAR",
+        "hanging": false
+      },
+      {
+        "id": 98,
+        "name": "ADULT ATHLETIC & MEN'S CASUAL",
+        "hanging": false
+      }
+    ],
+    "id": 47,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Shoes",
+    "recommendedCall": {
+      "id": "269",
+      "name": "Shoes"
+    }
+  },
+  {
+    "categoryIds": [
+      4787
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 82,
+        "name": "BICYCLES & PHYSICAL FITNESS",
+        "hanging": false
+      },
+      {
+        "id": 88,
+        "name": "TEAM & SPORT EQUIPMENT",
+        "hanging": false
+      },
+      {
+        "id": 89,
+        "name": "WATER SPORTS",
+        "hanging": false
+      },
+      {
+        "id": 91,
+        "name": "INDOOR/OUTDOOR RECREATION",
+        "hanging": false
+      }
+    ],
+    "id": 48,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Sporting Goods",
+    "recommendedCall": {
+      "id": "272",
+      "name": "Sporting Goods"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 36,
+        "name": "KIDS SOCKS AND PACKAGED UNDERWEAR",
+        "hanging": true
+      },
+      {
+        "id": 75,
+        "name": "KIDS SLPWR/FASHION UNDRWR/BODYWEAR",
+        "hanging": true
+      },
+      {
+        "id": 202,
+        "name": "CHILDREN ACCESSORIES",
+        "hanging": true
+      }
+    ],
+    "id": 57,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Boys/Girls Basics",
+    "recommendedCall": null
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 30,
+        "name": "INFANT BASICS AND FURNITURE",
+        "hanging": false
+      }
+    ],
+    "id": 59,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "N/I/T Basics and Furn",
+    "recommendedCall": {
+      "id": "258",
+      "name": "Infant Furniture"
+    }
+  },
+  {
+    "categoryIds": [
+      3703
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 49,
+        "name": "PERSONAL CARE",
+        "hanging": false
+      }
+    ],
+    "id": 70,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Personal Care",
+    "recommendedCall": {
+      "id": "222",
+      "name": "Personal Care"
+    }
+  },
+  {
+    "categoryIds": [
+      932503
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 7,
+        "name": "BABY CARE",
+        "hanging": false
+      }
+    ],
+    "id": 71,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Baby",
+    "recommendedCall": {
+      "id": "254",
+      "name": "Infants"
+    }
+  },
+  {
+    "categoryIds": [
+      3929
+    ],
+    "createdDate": "2015-09-24T01:08:01+0000",
+    "departments": [
+      {
+        "id": 2,
+        "name": "STORAGE AND ORGANIZATION",
+        "hanging": false
+      },
+      {
+        "id": 70,
+        "name": "KITCHENWARE",
+        "hanging": false
+      },
+      {
+        "id": 72,
+        "name": "SMALL APPLIANCES",
+        "hanging": false
+      },
+      {
+        "id": 73,
+        "name": "OIL, CHEMICALS, BATTERIES",
+        "hanging": false
+      },
+      {
+        "id": 85,
+        "name": "HARDWARE",
+        "hanging": false
+      },
+      {
+        "id": 92,
+        "name": "AUTOMOTIVE ACCESSORIES",
+        "hanging": false
+      }
+    ],
+    "id": 73,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Housewares",
+    "recommendedCall": {
+      "id": "239",
+      "name": "Automotive"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 38,
+        "name": "BOYS SWIM/OUTERWEAR/UNIFORMS",
+        "hanging": true
+      },
+      {
+        "id": 39,
+        "name": "C9",
+        "hanging": true
+      },
+      {
+        "id": 46,
+        "name": "BOYS BOTTOMS",
+        "hanging": true
+      },
+      {
+        "id": 76,
+        "name": "BOYS SPORTWEAR",
+        "hanging": true
+      }
+    ],
+    "id": 6,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Boys",
+    "recommendedCall": {
+      "id": "242",
+      "name": "Boys"
+    }
+  },
+  {
+    "categoryIds": null,
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 253,
+        "name": "PAPER & DSPBL PLASTICS",
+        "hanging": false
+      }
+    ],
+    "id": 28,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Paper and Disposable Plastics",
+    "recommendedCall": {
+      "id": "256",
+      "name": "Paper"
+    }
+  },
+  {
+    "categoryIds": [
+      5042
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 216,
+        "name": "DELI",
+        "hanging": false
+      },
+      {
+        "id": 227,
+        "name": "DELI",
+        "hanging": false
+      },
+      {
+        "id": 232,
+        "name": "SUSHI",
+        "hanging": false
+      }
+    ],
+    "id": 11,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Deli",
+    "recommendedCall": {
+      "id": "234",
+      "name": "Deli"
+    }
+  },
+  {
+    "categoryIds": [
+      4618
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 11,
+        "name": "MEN'S COLLEGE/PRO",
+        "hanging": true
+      },
+      {
+        "id": 34,
+        "name": "CONVERSE ONE STAR",
+        "hanging": true
+      },
+      {
+        "id": 41,
+        "name": "MENS ACTIVEWEAR",
+        "hanging": true
+      },
+      {
+        "id": 42,
+        "name": "MENS PANTS AND SHORTS",
+        "hanging": true
+      },
+      {
+        "id": 43,
+        "name": "MEN'S TOPS AND SWEATERS",
+        "hanging": true
+      },
+      {
+        "id": 44,
+        "name": "MENS LOUNGE/ACCESS",
+        "hanging": true
+      },
+      {
+        "id": 79,
+        "name": "WOVEN TOPS",
+        "hanging": true
+      },
+      {
+        "id": 281,
+        "name": "MENS SEASONAL APPAREL",
+        "hanging": true
+      }
+    ],
+    "id": 36,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Mens",
+    "recommendedCall": {
+      "id": "263",
+      "name": "Mens"
+    }
+  },
+  {
+    "categoryIds": [
+      5033
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 218,
+        "name": "BAKERY",
+        "hanging": false
+      },
+      {
+        "id": 220,
+        "name": "BAKERY (COST)",
+        "hanging": false
+      },
+      {
+        "id": 225,
+        "name": "PRODUCTION BAKERY",
+        "hanging": false
+      }
+    ],
+    "id": 4,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Bakery",
+    "recommendedCall": {
+      "id": "237",
+      "name": "Bakery"
+    }
+  },
+  {
+    "categoryIds": [
+      5033
+    ],
+    "createdDate": "2015-09-18T15:43:42+0000",
+    "departments": [
+      {
+        "id": 212,
+        "name": "MEAL ESSENTIALS",
+        "hanging": false
+      },
+      {
+        "id": 261,
+        "name": "BREAD AND BAKING",
+        "hanging": false
+      }
+    ],
+    "id": 13,
+    "lastModifiedBy": null,
+    "modifiedDate": "2015-09-30T11:27:40+0000",
+    "name": "Dry",
+    "recommendedCall": {
+      "id": "251",
+      "name": "Grocery"
+    }
+  }
+]

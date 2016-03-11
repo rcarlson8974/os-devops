@@ -1,0 +1,72 @@
+[
+  {
+    "createdDate": "2015-04-22T22:03:58+0000",
+    "modifiedDate": "2015-04-23T16:00:08+0000",
+    "name": "Tyler's Desk",
+    "pois": [
+      {
+        "id": null,
+        "name": "Toys",
+        "major": 7,
+        "minor": null,
+        "type": "Region"
+      }
+    ],
+    "storeIds": [
+      "9349",
+      "1375"
+    ],
+    "indoorLocationType": "REGION",
+    "indoorLocationTypeEvent": "ENTER",
+    "rules": [],
+    "actions": [
+      {
+        "indoorLocationActionType": "PUSH_CONTENT",
+        "indoorLocationNotificationType": "IN_APP",
+        "actionUri": "target://landing/custom?page=featured-phone-deeplink-test",
+        "message": "Booyah!",
+        "tag": null,
+        "indoorLocationNotificationBubble": null,
+        "indoorLocationTargetRun": null
+      }
+    ],
+    "startDate": "2015-04-20T05:00:00+0000",
+    "endDate": null
+  },
+  {
+    "createdDate": "2015-04-02T16:00:37+0000",
+    "modifiedDate": "2015-04-24T18:34:51+0000",
+    "name": "All Store Entrances",
+    "pois": [
+      {
+        "id": null,
+        "name": "Entrance",
+        "major": 1,
+        "minor": null,
+        "type": "Region"
+      }
+    ],
+    "storeIds": [
+      "1375",
+      "1095",
+      "3200"
+    ],
+    "indoorLocationType": "REGION",
+    "indoorLocationTypeEvent": "ENTER",
+    "dwellTime": null,
+    "rules": [],
+    "actions": [
+      {
+        "indoorLocationActionType": "TAG",
+        "indoorLocationNotificationType": null,
+        "actionUri": null,
+        "message": null,
+        "tag": "EnterStore",
+        "indoorLocationNotificationBubble": null,
+        "indoorLocationTargetRun": null
+      }
+    ],
+    "startDate": "2015-04-22T05:00:00+0000",
+    "endDate": null
+  }
+]

@@ -1,0 +1,17 @@
+---
+
+# Vagrant will automatically manage your /etc/hosts file for you
+
+- name: mongodb-01.local.redsky.tgtappdata.com
+  box: bento/centos-7.2
+  box_url: https://atlas.hashicorp.com/bento/boxes/centos-7.2
+  ram: 512
+  ip: 192.168.3.3
+  playbook: mongodb.yml
+  forwarded_port: 27017
+  rs_environment: local
+  rs_region: msp
+  rs_server_type: type_mongodb
+
+
+

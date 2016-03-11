@@ -1,0 +1,5 @@
+---
+- name: create ps1.sh file
+  copy:
+    content: 'export PS1="[\u@\H \W]\$ "'
+    dest: /etc/profile.d/ps1.sh

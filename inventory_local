@@ -1,0 +1,5 @@
+[region_msp]
+mongodb-01.local.redsky.tgtappdata.com          ansible_ssh_user=vagrant   ansible_ssh_port=22  ip_tgt_private=192.168.3.3  rs_environment=local rs_region=msp rs_server_type=mongodb
+
+[type_mongodb]
+mongodb-01.local.redsky.tgtappdata.com          ansible_ssh_user=vagrant   ansible_ssh_port=22  ip_tgt_private=192.168.3.3  rs_environment=local rs_region=msp rs_server_type=mongodb

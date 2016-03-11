@@ -1,0 +1,9 @@
+#!/bin/bash
+
+{% if groups['type_mongo_mms_agent'] is defined %}
+{% for mongo_mms_agent in groups['type_mongo_mms_agent'] %}
+{% if rs_region != 'dfw' %}
+iptables -A INPUT -s {{ hostvars[mongo_mms_agent]['ip_public'] }} -p tcp --dport {{ mongodb_port }} -j ACCEPT
+{% endif %}
+{% endfor %}
+{% endif %}

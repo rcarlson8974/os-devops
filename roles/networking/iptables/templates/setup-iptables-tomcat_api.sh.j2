@@ -1,0 +1,7 @@
+#!/bin/bash
+
+{% for tomcat_admin in groups['type_tomcat_admin'] %}
+{% if rs_region != hostvars[tomcat_admin]['rs_region'] %}
+iptables -A INPUT -s {{ hostvars[tomcat_admin]['ip_public'] }} -p tcp --dport {{ tomcat_port }} -j ACCEPT
+{% endif %}
+{% endfor %}

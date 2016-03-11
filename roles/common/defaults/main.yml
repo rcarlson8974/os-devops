@@ -1,0 +1,10 @@
+---
+maxretry: 5
+bantime: 86400 # 1 day
+
+users:
+  - name: Rando
+    lan_id: randycarlson
+    group: developers
+    ssh_key: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDH9E+Nr30lC7j1woPVBccLa88jKtyABpjANt0Q15jHoP50hMuWR7HkR9RIAyIncW+nqaEbep3weS29sc/9XICb/b/5xgEsFxhGv+GOc+b0AEqcEtxad7Z5ryOioVn8iD+SS9nN38aaCQvKj4ShU3R+NZ3egP9Vjufc5iGyxM8/8rt3Y2U1p4uq796UOqlQw53Ow7P0Kb4zfDzCvzKQbA0nK4GMoBTtqf+gjNNNAAh4c3pyrwXv1eJEAIYvH78XeapK/U0LaoqEOLkA7YLmxm+zuNT2YdZkoYO5jOA2coh635KbJXgGYVNpqIY1yn4lw/za490MytP2YSqgHmLT3ZmF rcarlson@otsegosolutions.com'
+
